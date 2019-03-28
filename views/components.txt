@@ -1,0 +1,443 @@
+cards simple 
+
+
+<div class="container">
+  <h2>Card Header and Footer</h2>
+  <div class="card">
+    <div class="card-header">Header</div>
+    <div class="card-body">Content</div> 
+    <div class="card-footer">Footer</div>
+  </div>
+</div>
+
+
+
+------cards complete -----------
+<div class="card" style="width:400px">
+    <img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <br>
+  
+  
+       <div class="row ">
+            <div class="col-md-12 ">
+				<div class="col-md-12  text-center" >
+					<div class="card text-center container" style="width:100%" >
+						<img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+						  <h4 class="card-title">John Doe</h4>
+						  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+						  <a href="#" class="btn btn-primary">See Profile</a>
+						</div>
+					 </div>
+					<br>
+				</div>
+				
+			 </div>
+		</div>
+		  <div class="row ">
+            <div class="col-md-12 ">
+				<div class="col-md-12  text-center" >
+					<div class="card text-center container" style="width:100%" >
+						<img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+						  <h4 class="card-title">John Doe</h4>
+						  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+						  <a href="#" class="btn btn-primary">Commander</a> <a href="#" class="btn btn-primary">Partager</a> <a href="#" class="btn btn-primary">J'aime</a>
+						</div>
+					 </div>
+					<br>
+				</div>
+				
+			 </div>
+		</div>
+  
+  
+  
+  -----------------media------------
+  <!-- Media top -->
+<div class="media">
+  <img src="img_avatar1.png" class="align-self-start mr-3" style="width:60px">
+  <div class="media-body">
+    <h4>Media Top</h4>
+    <p>Lorem ipsum...</p>
+  </div>
+</div>
+
+<!-- Media middle -->
+<div class="media">
+  <img src="img_avatar1.png" class="align-self-center mr-3" style="width:60px">
+  <div class="media-body">
+    <h4>Media Middle</h4>
+    <p>Lorem ipsum...</p>
+  </div>
+</div>
+
+<!-- Media bottom -->
+<div class="media">
+  <img src="img_avatar1.png" class="align-self-end mr-3" style="width:60px">
+  <div class="media-body">
+    <h4>Media Bottom</h4>
+    <p>Lorem ipsum...</p>
+  </div>
+</div>
+
+
+
+
+
+
+---------------------------------------------acceuil 1.1.0
+
+
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+           <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Acceuil</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">Spécialités</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Spécialités Européens</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Spécialités Africains</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-chart-pie menu-icon"></i>
+              <span class="menu-title">Publier plat</span>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Publier Menu</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-grid-large menu-icon"></i>
+              <span class="menu-title">Commandes</span>
+            </a>
+          </li>
+		  
+          <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-emoticon menu-icon"></i>
+              <span class="menu-title">Voir mes plats et menus publié</span>
+            </a>
+          </li>>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body dashboard-tabs p-0">
+                  <ul class="nav nav-tabs px-4" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="purchases-tab" data-toggle="tab" href="#purchases" role="tab" aria-controls="purchases" aria-selected="false">Purchases</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content py-0 px-0">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Start date</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                <a class="dropdown-item" href="#">21 Oct 2018</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Revenue</small>
+                            <h5 class="mr-2 mb-0">10000Francs</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total inscrit</small>
+                            <h5 class="mr-2 mb-0">20</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Flagged</small>
+                            <h5 class="mr-2 mb-0">3497843</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Statut</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                <a class="dropdown-item" href="#">21 Oct 2018</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Downloads</small>
+                            <h5 class="mr-2 mb-0">2233783</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total views</small>
+                            <h5 class="mr-2 mb-0">9833550</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Revenue</small>
+                            <h5 class="mr-2 mb-0">$577545</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Flagged</small>
+                            <h5 class="mr-2 mb-0">3497843</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="purchases" role="tabpanel" aria-labelledby="purchases-tab">
+                      <div class="d-flex flex-wrap justify-content-xl-between">
+                        <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Start date</small>
+                            <div class="dropdown">
+                              <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                <a class="dropdown-item" href="#">21 Oct 2018</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-currency-usd mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Revenue</small>
+                            <h5 class="mr-2 mb-0">$577545</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Total views</small>
+                            <h5 class="mr-2 mb-0">9833550</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Downloads</small>
+                            <h5 class="mr-2 mb-0">2233783</h5>
+                          </div>
+                        </div>
+                        <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                          <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                          <div class="d-flex flex-column justify-content-around">
+                            <small class="mb-1 text-muted">Flagged</small>
+                            <h5 class="mr-2 mb-0">3497843</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- <div class="content-wrapper"> transform en div class="container" -->
+	<div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Top aligned media</h4>
+                  <div class="media">
+                    <i class="mdi mdi-earth icon-md text-info d-flex align-self-start mr-3"></i>
+                    <div class="media-body">
+                      <p class="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+            <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Center aligned media</h4>
+                  <div class="media">
+                    <i class="mdi mdi-earth icon-md text-info d-flex align-self-center mr-3"></i>
+                    <div class="media-body">
+                      <p class="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Bottom aligned media</h4>
+                  <div class="media">
+                    <i class="mdi mdi-earth icon-md text-info d-flex align-self-end mr-3"></i>
+                    <div class="media-body">
+                      <p class="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- content-wrapper ends -->
+		
+		
+		////////////////afchifage dautre choses///////////////
+<div class="container"><!-- container -->
+          <div class="row ">
+            <div class="col-md-12 ">
+				<div class="col-md-12  text-center" >
+					<div class="card text-center container" style="width:100%" >
+						<img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+						  <h4 class="card-title">John Doe</h4>
+						  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+						  <a href="#" class="btn btn-primary">See Profile</a>
+						</div>
+					 </div>
+					<br>
+				</div>
+				
+			 </div>
+		</div>
+		  <div class="row ">
+            <div class="col-md-12 ">
+				<div class="col-md-12  text-center" >
+					<div class="card text-center container" style="width:100%" >
+						<img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image" style="width:100%">
+						<div class="card-body">
+						  <h4 class="card-title">John Doe</h4>
+						  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+						  <a href="#" class="btn btn-primary">Commander</a> <a href="#" class="btn btn-primary">Partager</a> <a href="#" class="btn btn-primary">J'aime</a>
+						</div>
+					 </div>
+					<br>
+				</div>
+				
+			 </div>
+		</div>
+		   <h3 class="mt-3 pb-3 mb-4 font-italic border-bottom">
+      More Cards
+   </h3>
+   <div class="row">
+      <div class="col-md-4">
+         <div class="card">
+            <img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image cap">
+            <div class="card-body">
+               <h5 class="card-title border-bottom pb-3">Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="card">
+            <img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image cap">
+            <div class="card-body">
+               <h5 class="card-title border-bottom pb-3">Card title <a href="#" class="float-right btn btn-sm btn-info d-inline-flex share"><i class="fas fa-share-alt"></i></a></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-sm btn-info float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+            </div>
+         </div>
+      </div>
+      <div class="col-md-4">
+         <div class="card bg-light">
+            <img class="card-img-top" src="images/faces/menu1.jpg" alt="Card image cap">
+            <div class="card-body">
+               <h5 class="card-title border-bottom pb-3">Card title <a href="#" class="float-right btn btn-sm btn-info d-inline-flex share"><i class="fas fa-share-alt"></i></a></h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+               <a href="#" class="btn btn-sm btn-info float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <hr>
+		
+</div>	
+		
+		
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2019 <a href="mailto:toure5013@gmail.com" target="_blank">TOURE SOULEYMANE</a>. Tout droits réservés</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">NaN 2.19 & Spiritual programmer <i class="mdi mdi-heart text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+ </div>
+    <!-- page-body-wrapper ends -->
+  </div>

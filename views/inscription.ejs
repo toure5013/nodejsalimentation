@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Majestic Admin</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+</head>
+
+<body>
+<nav class="navbar col-lg-12 col-12 p-0  d-flex flex-row" >
+            <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+          <a class="navbar-brand brand-logo" href="/">AlalFood</a>
+          <a class="navbar-brand brand-logo-mini" href="index.html">AF</a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-sort-variant"></span>
+          </button>
+        </div>  
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-4 w-100">
+          <li class="nav-item nav-search d-none d-lg-block w-100">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="mdi mdi-magnify"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="search">	
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <span class="nav-profile-name"><a href="/" class=" btn btn-success">Connexion</a></span>
+            </a>
+          </li>
+        </ul>
+      </div
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+        <div class="row flex-grow">
+          <div class="col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="auth-form-transparent text-left p-3">
+              <div class="brand-logo">
+                <i class="mdi mdi-food text-primary"></i>AlalFood
+              </div>
+              <h4>New here?</h4>
+              <h6 class="font-weight-light">Join us today! It takes only few steps</h6>
+
+                 <form class="pt-3" action="destinscrit" method="POST" >
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">Pseudo</label>
+                      <input type="text" name="username"  class="form-control" placeholder="Pseudo" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+					  <input type="email" name="email" class="form-control" placeholder="Email" required id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Numéro de téléphone</label>
+                      <input type="number" name="numero" class="form-control" placeholder="Numéro de téléphone" required>
+                    </div>
+					<div class="form-group">
+                      <label for="exampleInputConfirmPassword1">Ville</label>
+                      <input type="text" name="ville" placeholder="Ville" class="form-control" required>
+                    </div>
+				
+                    <div class="form-group">
+                      <label for="exampleInputConfirmPassword1">Mot de passe</label>
+                      <input type="password" name="password" placeholder="Mot de passe" class="form-control" required>
+                    </div>
+					 <div class="form-group">
+                      <label for="exampleInputConfirmPassword1">Confirmer Mot de passe</label>
+                      <input type="password" name="confirm_pass" class="form-control" placeholder="confirmer mot de passe" required>
+                    </div>
+                    <!-- <div class="form-check form-check-flat form-check-primary"> -->
+                      <!-- <label class="form-check-label"> -->
+                        <!-- <input type="checkbox" class="form-check-input"> -->
+                        <!-- Remember me -->
+                      <!-- </label> -->
+                    <!-- </div> -->
+					<div class="form-group alert text-center">
+						<button type="submit" class="btn btn-primary mr-5">Envoyer</button>
+						<button type="reset" class="btn btn-danger">Anuller</button>
+                    </div>
+                    
+                  </form>
+            </div>
+          </div>
+          <div class="col-lg-6 register-half-bg d-flex flex-row">
+            <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2019 Touré Souleymane.</p>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <!-- endinject -->
+</body>
+
+</html>

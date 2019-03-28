@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AlalFood</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+</head>
+
+<body>
+   <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+          <a class="navbar-brand brand-logo" href="/">AlalFood</a>
+          <a class="navbar-brand brand-logo-mini" href="/">ALF</a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-sort-variant"></span>
+          </button>
+        </div>  
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <ul class="navbar-nav mr-lg-4 w-100">
+          <li class="nav-item nav-search d-none d-lg-block w-100">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="search">
+                  <i class="mdi mdi-magnify"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+			
+				<%if (username){%>
+					<b><i>Bienvenue <%=username%></i></b>
+				<%}%>
+				<!-- image ici -->
+              <!-- <img src="images/faces/face5.jpg" alt="profile"/> -->
+              <span class="nav-profile-name"></span>
+            </a>
+			
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="/home">
+                <i class="mdi mdi-settings text-primary">
+                </i>Accueil
+              </a>
+              <a class="dropdown-item" href="/dec">
+                <i class="mdi mdi-logout text-primary"></i>Deconnexion
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+
+	
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+               <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Acceuil</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">Spécialités</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Spécialités Européens</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Spécialités Africains</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-chart-pie menu-icon"></i>
+              <span class="menu-title">Publier plat</span>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Publier Menu</span>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Spécialité Africain</span>
+            </a>
+          </li>
+		  <li class="nav-item">
+            <a class="nav-link" href="/cafe">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Spécialité Café</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-grid-large menu-icon"></i>
+              <span class="menu-title">Commandes</span>
+            </a>
+          </li>
+		  
+          <li class="nav-item">
+            <a class="nav-link" href="/profil">
+              <i class="mdi mdi-emoticon menu-icon"></i>
+              <span class="menu-title">Voir mes plats et menus publié</span>
+            </a>
+          </li>>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+    <div class="main-panel">
+        <div class="">
+		   <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Publier un plat</h4>
+                  <p class="card-description">
+                    Donner les differents description du plats que vous souhaitez publier.
+                  </p>
+				<form action="/ajoutplat" method="POST">
+				  <div class="form-group">
+						<label>Nom du plat</label>
+						<input type="text" class="form-control form-control-lg" placeholder="Riz Gras" name="nomPlat" aria-label="nom_plat">
+					  </div>
+				<div class="form-group">
+                    <label for="exampleFormControlSelect2">Nombre de personnes maximum</label>
+                    <select class="form-control"  name="nbrePersonnePlat" id="exampleFormControlSelect2">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="10">+10</option>
+                    </select>
+                  </div>
+					<div class="form-group">
+					<label for="exampleFormControlSelect2">Prix</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-primary text-white">TTC</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Compte (FCFA)" name="prixPlat">
+                      <div class="input-group-append">
+                        <span class="input-group-text">FCFA</span>
+                      </div>
+                    </div>
+                  </div>
+				   <div class="form-group">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="livraisonPlat" id="domicile" value="Domicile">
+                              Livré à domicile
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="livraisonPlat" id="client" value="client" checked>
+                              Cuisiner chez le client 
+                            </label>
+                          </div>
+                    </div>
+				<div class="form-group">
+                    <label for="exampleFormControlSelect2">Images</label>
+                    <select class="form-control" name="imagePlat" id="exampleFormControlSelect2">
+                      <option value="4.jpg">foutou</option>
+                      <option value="3.jpg">Riz poulet</option>
+                      <option value="8.jpg">attiéké</option>
+                      <option value="10.jpg">Sauce graine villages</option>
+					  <option value="boulette1.jpg">Foutou</option>
+					  <option value="diner5.jpg">Crevette diner</option>
+					  <option value="diner3.jpg">Avocat viande</option>
+					  <option value="diner4.jpg">Avocat glamour diner</option>
+					  <option value="tchepe.jpg">Tchepe Rouge</option>
+					  <option value="viande.jpg">Sauce Arachide viande</option>
+					  <option value="feuille.jpg">Sauce feuille</option>
+					  <option value="gateau1.jpg">Gateau chocolat ronde </option>
+					  <option value="gateau1.jpg">Gateau chocolat carre ronde </option>
+					  <option value="gateau6.jpg">Gateau fraise </option>
+					  <option value="gateau7.jpg">Gateau fraise rouge blanc </option>
+					  <option value="frite1.jpg">Frite ronde</option>
+					  <option value="frite2.jpg">Frite citron</option>
+					  <option value="diner.jpg">Diner salade viande</option>
+					  <option value="frite.jpg">Frites</option>
+					  <option value="diner2.jpg">Rentrée avocat mayonnaise</option>
+					  <option value="frite.jpg">Frite poison</option>
+					  <option value="tchepe1.jpg">Aricot</option>
+					  <option value="pistache.jpg">Sauce Pistache</option>
+                    </select>
+                  </div>
+				   <div class="form-group  text-right">
+					 <button type="submit" class="btn btn-success btn-rounded btn-fw" name="btnPlat" value="plat">Publier Plat</button>
+					</div>
+				</form>
+					</div>
+				  </div>
+			</div>
+			
+			<!-- Deuxième case à droite -->
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Publier un menu</h4>
+				   <p class="card-description">
+                    Donner les differents description du menu que vous souhaitez publier.
+                  </p>
+				  <form action="/ajoutmenu" method="POST">
+				  <div class="form-group">
+						<label>Nom du Menu</label>
+						<input type="text"  name="nomMenu" class="form-control form-control-lg" placeholder="Riz Gras" aria-label="menu">
+				</div>
+				<div class="form-group">
+                    <label for="exampleFormControlSelect2">Nombre de personnes maximum</label>
+                    <select class="form-control"  name="nbrePersonneMenu" id="exampleFormControlSelect2">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="10">+10</option>
+                    </select>
+                  </div>
+				  <div class="form-group">
+                    <label for="exampleFormControlSelect2">Temps de cuissons</label>
+                    <select class="form-control"  nameid="tempsCuissons" name="tempsCuissons">
+                      <option value="10">10min-30min</option>
+                      <option value="30">30min-1h</option>
+                      <option value="60">1h-1h30min</option>
+                      <option value="100">2h-2h30min</option>
+                      <option value="120">+2h30min</option>
+                    </select>
+                  </div>
+				  
+					<div class="form-group">
+					<label for="exampleFormControlSelect2">Description</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text bg-danger text-white">Ingédients</span>
+                      </div>
+                      <textarea name="decriptionMenu" style="color:black" class="form-control" placeholder="frite:1000frs, attiéké, huile 100frs"></textarea>
+                      
+                    </div>
+					</div>
+					<div class="form-group">
+                    <select class="form-control" id="imageMenu" name="imageMenu">
+					<option value="4.jpg">foutou</option>
+                      <option value="3.jpg">Riz poulet</option>
+                      <option value="8.jpg">attiéké</option>
+                      <option value="10.jpg">Sauce graine villages</option>
+					  <option value="boulette1.jpg">Foutou</option>
+					  <option value="diner5.jpg">Crevette diner</option>
+					  <option value="diner3.jpg">Avocat viande</option>
+					  <option value="diner4.jpg">Avocat glamour diner</option>
+					  <option value="tchepe.jpg">Tchepe Rouge</option>
+					  <option value="viande.jpg">Sauce Arachide viande</option>
+					  <option value="feuille.jpg">Sauce feuille</option>
+					  <option value="gateau1.jpg">Gateau chocolat ronde </option>
+					  <option value="gateau1.jpg">Gateau chocolat carre ronde </option>
+					  <option value="gateau6.jpg">Gateau fraise </option>
+					  <option value="gateau7.jpg">Gateau fraise rouge blanc </option>
+					  <option value="frite1.jpg">Frite ronde</option>
+					  <option value="frite2.jpg">Frite citron</option>
+					  <option value="diner.jpg">Diner salade viande</option>
+					  <option value="frite.jpg">Frites</option>
+					  <option value="diner2.jpg">Rentrée avocat mayonnaise</option>
+					  <option value="frite.jpg">Frite poison</option>
+					  <option value="tchepe1.jpg">Aricot</option>
+                    </select>
+                  </div>
+                 
+					
+				   <div class="form-group text-right">
+					 <button type="submit" name="btnMenu" class="btn btn-secondary btn-rounded btn-fw" value="Envoyer">Publier Menu</button>
+					</div>
+				</form>
+			</div>
+			</div>
+			</div>
+				  
+				  
+				  
+				  
+				  
+				  
+            <div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+				
+				<!-- Debut d'affichage des produits publiés -->
+				
+				<div class="row">	
+                  <!-- <h4 class="card-title alert alert-primary text-center">Lies des plat et Menu publié sur le réseau social</h4> -->
+				<!-- //Plat : Selectionné tout ceci de facon dynamique -->
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+					
+			 <legend class="alert alert-primary text-center">Liste des Menus publiés par l'utilisateur </legend>
+                      <thead>
+                        <tr>
+                          <th>
+                            Plat
+                          </th>
+                          <th>
+                            First name
+                          </th>
+                          <th>
+                            Statut de livaison
+                          </th>
+                          <th>
+                            Prix
+                          </th>
+                          <th>
+                            Supprimer ce plat
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+				
+				<% plats_user.forEach(function(plat){ %>		
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/<%=plat.image_plat%>" alt="image"/>
+							
+                          </td>
+                          <td>
+                            <%=plat.nom_plat%>
+                          </td>
+                          <td>
+                            <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="" id="" value="" checked>
+                              <%=plat.livraison_plat%>
+                            </label>
+                          </div>
+                          </td>
+                          <td>
+                            <%=plat.prix_plat%> Fcfa
+                          </td>
+                          <td class="text-center">
+							<form action="suprimerplat" method="POST">
+								<input type="submit" class="btn btn-danger" name="btn_supprimer_plat" value="<%=plat.id_plat%>">
+							</form>
+                          </td>
+                        </tr>
+					<% }); %>
+					
+					<!-- Ceux ci ont été afficher manuellement pour être exemple: à les suprimer au besion -->
+						 <tr>
+                          <td class="py-1">
+                            <img src="images/faces/menu2.jpg" alt="image"/>
+                          </td>
+                          <td>
+                            Cacke 
+                          </td>
+                          <td>
+                            <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="" id="" value="option2" checked>
+                              Cuisiné chez le client
+                            </label>
+                          </div>
+                          </td>
+                          <td>
+								3000 Fcfa
+                          </td>
+                          <td class="text-center">
+                            <input type="button" class="btn btn-danger" value="X">
+                          </td>
+                        </tr>
+						 <tr>
+                          <td class="py-1">
+                            <img src="../../images/faces/menu2.jpg" alt="image"/>
+                          </td>
+                          <td>
+                            Gateau
+                          </td>
+                          <td>
+                            <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="" id="" value="option2" checked>
+                              A domicile
+                            </label>
+                          </div>
+                          </td>
+                          <td>
+                            2000 Fcfa
+                          </td>
+                          <td class="text-center">
+                            <input type="button" class="btn btn-danger" value="X">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+					
+					
+					
+			<!-- //Menu  : Selectionné tout ceci de facon dynamique -->
+		<br>
+		<br>
+		<br>
+			 <div class="table-responsive">
+			 <legend class="alert alert-success text-center">Liste des Menus publiés par l'utilisateur </legend>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>
+                            Image
+                          </th>
+						  <th>
+                            Nom
+                          </th>
+                          <th>
+                            Temps de cuissons
+                          </th>
+                          <th >
+                            Description
+                          <th>
+                            Supprimer ce Menu
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+				<% menu_users.forEach(function(menu){ %>		
+                        <tr>
+                          <td class="py-1">
+                            <img src="images/<%=menu.imageplat%>" alt="image"/>
+                          </td>
+                     <td>
+                            <%=menu.nom_menu%>
+                          </td>
+                          <td>
+                            <div class="form-check">
+                            <label class="form-check-label">
+                              <input type="radio" class="form-check-input" name="" id="" value="" checked>
+                              <%=menu.temps_cuissons_menut%>
+                            </label>
+                          </div>
+                          </td>
+                          <td>
+                            <%=menu.description%>
+                          </td>
+                          <td class="text-center">
+							<form action="/suprimermenu" method="POST">
+								<input type="submit" class="btn btn-danger" name="btn_supprimer_menu" value="<%=menu.id_menu%>">
+							</form>
+                          </td>
+                        </tr>
+					<% }); %>
+					</tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 grid-margin stretch-card">
+			<!-- contenu ici -->
+            </div>
+            
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Touré Souleymane  © 2019 All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">NaN2019 & Spiritual Programmer <i class="mdi mdi-heart text-danger"></i></span>
+          </div>
+        </footer>
+        <!-- partial -->
+		</div> 
+	  </div><!-- fin row -->
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <!-- endinject -->
+    <!-- endinject -->
+  <script src="js/file-upload.js"></script>
+  <!-- End custom js for this page-->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>

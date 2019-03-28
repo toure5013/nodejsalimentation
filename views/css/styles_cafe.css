@@ -1,0 +1,16 @@
+body {
+    background-image: linear-gradient(to right top, #997a31, #846325, #6f4d1b, #5a3810, #442504);
+    padding: 40px;
+}
+
+.container {
+    color: #fff;
+}
+.container h2 {
+    text-transform: uppercase;
+}
+
+.container p {
+    font-weight: bold;
+    padding-top: 15px;
+}
